@@ -1,5 +1,4 @@
 #Angular-Material-Local
----
 ##Usage
 1. Bower install angular-material to the get latest stable release (or download the files directly from the bower-material repository).
     - Please note that using Angular Material requires Angular 1.3.x or higher.
