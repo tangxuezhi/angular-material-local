@@ -6,4 +6,5 @@
     - Add new html file, the code from: https://github.com/angular/bower-material
     - In original demo, it now include `angular-aria.js`, we should involve this script.
     - In `angular-material.css`,the font from online website, download it and point font to local.
-3. Enjoy!
+3. Start server by `Node serve.js`, open `localhost:8000/app/index.html` in browser;
+4. Enjoy!
