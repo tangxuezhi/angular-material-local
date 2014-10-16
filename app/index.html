@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="myApp">
+
+    <div ng-controller="myCtrl" class="main-container">
+        <h3>checkbox</h3>
+        <material-checkbox ng-model="isChecked" aria-label="Finished?">
+          Finished ?
+        </material-checkbox>
+        <hr>
+
+        <h3>slider</h3>
+        <material-slider discrete ng-model="myDiscreteValue" step="10" min="10" max="130"></material-slider>
+        <material-slider ng-model="myValue" min="5" max="500"></material-slider>
+        <hr>
+
+        <h3>button</h3>
+        <material-button class="material-button-colored material-button-raised" tabindex="-1" aria-label="Colored">Button</material-button>
+        <hr>
+        
+    </div>
+
+
+
+
+
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>  
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/hammerjs/hammer.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script>
+        // Include app dependencies on ngAnimate and ngMaterial
+        angular.module( 'myApp', [ 'ngAnimate', 'ngMaterial' ] )
+            .controller("myCtrl", function() {
+                console.log(1);
+            } );
+    </script>
+
+
+    <script type="text/javascript" src="http://127.0.0.1:35729/livereload.js"></script>
+</body>
+</html>
